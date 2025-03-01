@@ -7,7 +7,9 @@ on:
 
 jobs:
   update-json:
-    runs-on: ubuntu-latest  # GitHub에서 제공하는 Linux 서버에서 실행
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 🔹 GitHub Actions의 push 권한 추가
 
     steps:
       - name: 저장소 체크아웃
@@ -17,9 +19,6 @@ jobs:
         uses: actions/setup-python@v3  # Python 설치
         with:
           python-version: '3.9'
-
-      - name: requirements.txt 경로 확인  # 🔹 파일이 있는지 확인
-        run: ls -al
 
       - name: 필요한 패키지 설치
         run: |
@@ -35,6 +34,7 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git add data/epl_schedule.json
           git commit -m "자동 업데이트: EPL 경기 일정 JSON"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/clockmaker2020/soccer-json-hosting.git test
+          git push origin test  # 🔹 올바른 인증 방식 적용
