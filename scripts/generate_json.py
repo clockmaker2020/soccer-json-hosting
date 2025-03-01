@@ -1,12 +1,12 @@
 import os
 import json
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, UTC
 
 # ✅ API 설정
-API_KEY = "0776a35eb1067086efe59bb7f93c6498"  # API 키
-LEAGUE_ID = 39  # 프리미어리그 ID
-SEASON = 2024  # 시즌 설정
+API_KEY = "0776a35eb1067086efe59bb7f93c6498"
+LEAGUE_ID = 39
+SEASON = 2024
 HEADERS = {"x-apisports-key": API_KEY}
 
 # ✅ 저장할 폴더 설정
@@ -24,7 +24,7 @@ def fetch_data(url):
         return []
 
 # ✅ 금일 날짜 기준 한 달간 경기 일정 가져오기
-today = datetime.utcnow()
+today = datetime.now(UTC)
 one_month_later = today + timedelta(days=30)
 from_date = today.strftime("%Y-%m-%d")
 to_date = one_month_later.strftime("%Y-%m-%d")
@@ -45,7 +45,7 @@ schedule_data = {
 for match in matches:
     fixture = match["fixture"]
     teams = match["teams"]
-    venue = match["venue"]
+    venue = match.get("venue", {"name": "Unknown Venue"})  # 🔹 venue 예외 처리 추가
 
     # 🕒 UTC → KST 변환
     utc_time = datetime.strptime(fixture["date"], "%Y-%m-%dT%H:%M:%S%z")
