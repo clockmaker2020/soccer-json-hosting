@@ -57,7 +57,7 @@ schedule_data = {
 for match in matches:
     fixture = match["fixture"]
     teams = match["teams"]
-    venue = match["venue"]
+    venue = match.get("venue", {"name": "Unknown Venue"})  # 🔹 venue 예외 처리 추가
 
     # 🕒 UTC → KST 변환
     utc_time = datetime.strptime(fixture["date"], "%Y-%m-%dT%H:%M:%S%z")
