@@ -1,8 +1,8 @@
-name: Upload EPL Schedule JSON  # GitHub Actions 작업 이름
+name: Upload EPL Schedule JSON
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 매일 00:00 UTC에 자동 실행 (한국 시간 09:00)
+    - cron: '0 0 * * *'  # 매일 00:00 UTC 실행 (한국 시간 09:00)
   workflow_dispatch:  # GitHub에서 수동 실행 가능
 
 jobs:
@@ -18,8 +18,16 @@ jobs:
         with:
           python-version: '3.9'
 
+      - name: requirements.txt 경로 확인  # 🔹 파일이 있는지 확인
+        run: ls -al
+
+      - name: 필요한 패키지 설치
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt  # 🔹 패키지 설치 실행
+
       - name: API 요청 및 JSON 파일 생성
-        run: python scripts/generate_json.py  # Python 코드 실행하여 JSON 파일 생성
+        run: python scripts/generate_json.py
 
       - name: GitHub에 JSON 파일 업로드
         run: |
