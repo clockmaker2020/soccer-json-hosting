@@ -30,9 +30,11 @@ jobs:
         run: python scripts/generate_json.py
 
       - name: GitHub에 JSON 파일 업로드
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 🔹 GitHub 인증 추가
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
           git add data/epl_schedule.json
           git commit -m "자동 업데이트: EPL 경기 일정 JSON"
-          git push origin test  # test 브랜치에 자동 업데이트
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/clockmaker2020/soccer-json-hosting.git test
