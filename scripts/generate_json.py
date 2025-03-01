@@ -1,7 +1,7 @@
 import os
 import json
 import requests
-from datetime import datetime, timedelta, UTC
+from datetime import datetime, timedelta, timezone
 
 # ✅ API 설정
 API_KEY = "0776a35eb1067086efe59bb7f93c6498"
@@ -24,7 +24,7 @@ def fetch_data(url):
         return []
 
 # ✅ 금일 날짜 기준 한 달간 경기 일정 가져오기
-today = datetime.now(UTC)
+today = datetime.now(timezone.utc)
 one_month_later = today + timedelta(days=30)
 from_date = today.strftime("%Y-%m-%d")
 to_date = one_month_later.strftime("%Y-%m-%d")
