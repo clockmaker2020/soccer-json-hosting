@@ -10,7 +10,7 @@ SEASON = 2024
 HEADERS = {"x-apisports-key": API_KEY}
 
 # ✅ 저장할 폴더 설정 (경로 수정)
-MATCH_DIR = os.path.join(os.getcwd(), "data", "matches")
+MATCH_DIR = os.path.abspath(os.path.join(os.getcwd(), "..", "data", "matches"))
 
 # ✅ 기존 JSON 파일 삭제
 if os.path.exists(MATCH_DIR):
