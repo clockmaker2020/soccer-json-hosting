@@ -6,19 +6,28 @@ API_URL = "https://api-football.com/epl_schedule"
 
 try:
     response = requests.get(API_URL, timeout=10)  # 10초 제한
-    response.raise_for_status()  # HTTP 에러 발생 시 예외 처리
+    response.raise_for_status()  # HTTP 오류 발생 시 예외 발생
 
-    # ✅ 응답 검증: JSON 데이터 확인
-    if response.text.strip() == "":
+    # ✅ 응답이 비어있는 경우 예외 처리
+    if not response.text.strip():
         raise ValueError("❌ API 응답이 비어 있습니다.")
+
+    # ✅ 응답이 JSON 형식인지 확인
+    content_type = response.headers.get("Content-Type", "")
+    if "application/json" not in content_type:
+        raise ValueError(f"❌ API 응답이 JSON 형식이 아닙니다. Content-Type: {content_type}")
 
     try:
         data = response.json()
     except json.JSONDecodeError:
-        raise ValueError("❌ API 응답이 JSON 형식이 아닙니다.")
+        raise ValueError("❌ API 응답을 JSON으로 변환할 수 없습니다.")
 
 except requests.exceptions.RequestException as e:
     raise SystemExit(f"❌ API 요청 실패: {e}")
+
+# ✅ JSON 데이터가 비어 있는 경우 오류 출력
+if not data or "matches" not in data or not data["matches"]:
+    raise ValueError("❌ API에서 경기 일정 데이터가 없습니다.")
 
 # ✅ 영어 팀명을 한국어로 변환하는 매핑
 TEAM_NAME_MAPPING = {
