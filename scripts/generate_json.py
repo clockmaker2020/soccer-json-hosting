@@ -57,7 +57,7 @@ schedule_data = {
 for match in matches:
     fixture = match["fixture"]
     teams = match["teams"]
-    venue = match.get("venue", {"name": "Unknown Venue"})  # 🔹 venue 예외 처리 추가
+    # venue = match.get("venue", {"name": "Unknown Venue"})  # 🔹 venue 예외 처리 추가
 
     # 🕒 UTC → KST 변환
     utc_time = datetime.strptime(fixture["date"], "%Y-%m-%dT%H:%M:%S%z")
@@ -77,7 +77,7 @@ for match in matches:
         "away_team": away_team_name,
         "home_team_rank": home_team_rank,
         "away_team_rank": away_team_rank,
-        "stadium": venue.get("name", "Unknown Venue"),
+        # "stadium": venue.get("name", "Unknown Venue"),
         "status": fixture["status"]["long"]
     }
     schedule_data["matches"].append(game_info)
