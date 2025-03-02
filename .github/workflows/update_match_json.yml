@@ -8,9 +8,13 @@ on:
 jobs:
   update-json:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # ✅ GitHub Actions에 푸시 권한 부여
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # ✅ GITHUB_TOKEN 사용
 
       - name: Set up Python
         uses: actions/setup-python@v3
@@ -29,4 +33,4 @@ jobs:
           git config --global user.email "actions@github.com"
           git add data/matches/
           git commit -m "Auto-update match JSON files" || echo "No changes to commit"
-          git push
+          git push origin test  # ✅ `test` 브랜치에 푸시
