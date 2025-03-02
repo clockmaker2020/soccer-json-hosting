@@ -1,21 +1,21 @@
 name: Update Match JSON
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # ✅ 수동 실행 가능
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 * * * *"  # ✅ 매 정각(1시간마다) 자동 실행
 
 jobs:
   update-json:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write  # ✅ GitHub Actions에 푸시 권한 부여
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
           ref: test  # ✅ `test` 브랜치 사용
-          fetch-depth: 0  
+          fetch-depth: 0  # ✅ 전체 Git 기록 가져오기
 
       - name: Set up Python
         uses: actions/setup-python@v3
@@ -28,10 +28,15 @@ jobs:
       - name: Run JSON Update Script
         run: python scripts/generate_match_details.py
 
-      - name: Commit and Push Changes
+      - name: Ensure Changes are Detected  # ✅ 변경 사항 강제 감지
+        run: |
+          git rm -r --cached data/matches || echo "No cache to clear"
+          git add data/matches/
+          git status  # ✅ 변경 사항 확인 출력
+
+      - name: Commit and Push Changes  # ✅ 강제 변경 사항 반영
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add data/matches/
-          git commit -m "Auto-update match JSON files" || echo "No changes to commit"
-          git push origin test --force  # ✅ `test` 브랜치로 푸시
+          git commit -am "Auto-update match JSON files" || echo "No changes to commit"
+          git push origin test --force  # ✅ `test` 브랜치로 강제 푸시
