@@ -1,7 +1,7 @@
 import os
 import json
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 # ✅ API 설정
 API_KEY = "0776a35eb1067086efe59bb7f93c6498"
@@ -9,10 +9,10 @@ LEAGUE_ID = 39  # 프리미어리그 ID
 SEASON = 2024
 HEADERS = {"x-apisports-key": API_KEY}
 
-# ✅ 저장할 폴더 설정
+# ✅ 저장할 폴더 설정 (경로 수정)
 MATCH_DIR = os.path.join(os.getcwd(), "data", "matches")
 
-# ✅ 1️⃣ 기존 JSON 파일 삭제
+# ✅ 기존 JSON 파일 삭제
 if os.path.exists(MATCH_DIR):
     for file in os.listdir(MATCH_DIR):
         if file.endswith(".json"):
@@ -23,7 +23,7 @@ if os.path.exists(MATCH_DIR):
 os.makedirs(MATCH_DIR, exist_ok=True)
 print(f"📁 경기 상세 JSON 저장 폴더 생성 완료: {MATCH_DIR}")
 
-# ✅ 2️⃣ API 요청 함수
+# ✅ API 요청 함수
 def fetch_data(url):
     try:
         response = requests.get(url, headers=HEADERS, timeout=10)
@@ -33,14 +33,14 @@ def fetch_data(url):
         print(f"⚠️ [ERROR] API 요청 실패: {e}")
         return []
 
-# ✅ 3️⃣ 오늘부터 한 달간의 경기 ID 가져오기
-today = datetime.utcnow().strftime("%Y-%m-%d")
-one_month_later = (datetime.utcnow() + timedelta(days=30)).strftime("%Y-%m-%d")
+# ✅ 오늘부터 한 달간의 경기 ID 가져오기
+today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+one_month_later = (datetime.now(timezone.utc) + timedelta(days=30)).strftime("%Y-%m-%d")
 
 fixture_url = f"https://v3.football.api-sports.io/fixtures?league={LEAGUE_ID}&season={SEASON}&from={today}&to={one_month_later}"
 fixtures = fetch_data(fixture_url)
 
-# ✅ 4️⃣ 개별 경기 상세 정보 가져오기 및 JSON 저장
+# ✅ 개별 경기 상세 정보 가져오기 및 JSON 저장
 for fixture in fixtures:
     match_id = fixture["fixture"]["id"]
     detail_url = f"https://v3.football.api-sports.io/fixtures?id={match_id}"
@@ -81,8 +81,11 @@ for fixture in fixtures:
         "블로그 URL": ""
     }
 
+    # ✅ 파일명에 `fixture_id` 추가 (중복 방지)
+    match_filename = f"match_{match_id}_{kst_time.strftime('%Y%m%d_%H%M')}.json"
+    match_path = os.path.join(MATCH_DIR, match_filename)
+
     # ✅ JSON 파일 저장
-    match_path = os.path.join(MATCH_DIR, f"match_{kst_time.strftime('%Y%m%d_%H%M')}.json")
     with open(match_path, "w", encoding="utf-8") as file:
         json.dump(match_json, file, indent=4, ensure_ascii=False)
 
