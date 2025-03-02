@@ -97,8 +97,8 @@ for match in matches:
     away_team_kor = TEAM_NAME_MAPPING.get(away_team_eng, away_team_eng)
 
     # ✅ 팀 순위 정보 추가
-    home_team_rank = team_rankings.get(home_team_eng, "Unknown")
-    away_team_rank = team_rankings.get(away_team_eng, "Unknown")
+    home_team_rank = team_rankings.get(home_team, "Unknown")
+    away_team_rank = team_rankings.get(away_team, "Unknown")
 
     # ✅ 저장할 경기 정보 (경기장 정보 제거)
     game_info = {
