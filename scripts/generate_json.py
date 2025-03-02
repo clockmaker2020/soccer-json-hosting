@@ -3,8 +3,22 @@ import requests
 
 # ✅ API 요청 (EPL 경기 일정 데이터 가져오기)
 API_URL = "https://api-football.com/epl_schedule"
-response = requests.get(API_URL)
-data = response.json()
+
+try:
+    response = requests.get(API_URL, timeout=10)  # 10초 제한
+    response.raise_for_status()  # HTTP 에러 발생 시 예외 처리
+
+    # ✅ 응답 검증: JSON 데이터 확인
+    if response.text.strip() == "":
+        raise ValueError("❌ API 응답이 비어 있습니다.")
+
+    try:
+        data = response.json()
+    except json.JSONDecodeError:
+        raise ValueError("❌ API 응답이 JSON 형식이 아닙니다.")
+
+except requests.exceptions.RequestException as e:
+    raise SystemExit(f"❌ API 요청 실패: {e}")
 
 # ✅ 영어 팀명을 한국어로 변환하는 매핑
 TEAM_NAME_MAPPING = {
