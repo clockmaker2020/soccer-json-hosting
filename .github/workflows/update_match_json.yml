@@ -1,0 +1,32 @@
+name: Update Match JSON
+
+on:
+  workflow_dispatch:  # ✅ 수동 실행 가능
+  schedule:
+    - cron: "0 * * * *"  # ✅ 매 정각(1시간마다) 자동 실행
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run JSON Update Script
+        run: python scripts/generate_match_details.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add data/matches/
+          git commit -m "Auto-update match JSON files" || echo "No changes to commit"
+          git push
