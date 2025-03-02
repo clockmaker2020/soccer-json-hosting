@@ -8,26 +8,26 @@ OUTPUT_JSON_PATH = os.path.join(BASE_DIR, "data/epl_schedule_ko.json")
 
 # ✅ 영어 팀명을 한국어로 변환하는 매핑
 TEAM_NAME_MAPPING = {
-    "Liverpool": "리버풀",
-    "Arsenal": "아스널",
     "Nottingham Forest": "노팅엄 포레스트",
     "Manchester City": "맨 시티",
-    "Chelsea": "첼시",
-    "Newcastle": "뉴캐슬",
-    "Bournemouth": "본머스",
+    "Liverpool": "리버풀",
+    "Southampton": "사우샘프턴",
     "Brighton": "브라이턴",
     "Fulham": "풀럼",
-    "Aston Villa": "애스턴 빌라",
-    "Brentford": "브렌트퍼드",
     "Crystal Palace": "크리스털 팰리스",
-    "Tottenham": "토트넘",
-    "Manchester United": "맨유",
-    "West Ham": "웨스트 햄",
-    "Everton": "에버턴",
-    "Wolves": "울브스",
     "Ipswich": "입스위치",
-    "Leicester City": "레스터 시티",
-    "Southampton": "사우샘프턴"
+    "Brentford": "브렌트퍼드",
+    "Aston Villa": "애스턴 빌라",
+    "Wolves": "울브스",
+    "Everton": "에버턴",
+    "Tottenham": "토트넘",
+    "Bournemouth": "본머스",
+    "Chelsea": "첼시",
+    "Leicester": "레스터 시티",
+    "Manchester United": "맨유",
+    "Arsenal": "아스널",
+    "West Ham": "웨스트 햄",
+    "Newcastle": "뉴캐슬"
 }
 
 def convert_team_names():
