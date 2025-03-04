@@ -244,6 +244,15 @@
             "home_team_rank": 1,
             "away_team_rank": 16,
             "status": "Not Started"
+        },
+        {
+            "date": "2025-04-04",
+            "time": "04:00",
+            "home_team": "첼시",
+            "away_team": "토트넘",
+            "home_team_rank": 5,
+            "away_team_rank": 13,
+            "status": "Not Started"
         }
     ]
 }
