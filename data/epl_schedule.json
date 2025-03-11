@@ -3,15 +3,6 @@
     "season": 2024,
     "matches": [
         {
-            "date": "2025-03-11",
-            "time": "05:00",
-            "home_team": "웨스트 햄",
-            "away_team": "뉴캐슬",
-            "home_team_rank": 16,
-            "away_team_rank": 9,
-            "status": "Not Started"
-        },
-        {
             "date": "2025-03-16",
             "time": "00:00",
             "home_team": "사우샘프턴",
@@ -35,7 +26,7 @@
             "home_team": "맨 시티",
             "away_team": "브라이턴",
             "home_team_rank": 5,
-            "away_team_rank": 6,
+            "away_team_rank": 7,
             "status": "Not Started"
         },
         {
@@ -52,7 +43,7 @@
             "time": "02:30",
             "home_team": "본머스",
             "away_team": "브렌트퍼드",
-            "home_team_rank": 8,
+            "home_team_rank": 9,
             "away_team_rank": 12,
             "status": "Not Started"
         },
@@ -115,7 +106,7 @@
             "time": "03:45",
             "home_team": "뉴캐슬",
             "away_team": "브렌트퍼드",
-            "home_team_rank": 9,
+            "home_team_rank": 6,
             "away_team_rank": 12,
             "status": "Not Started"
         },
@@ -124,7 +115,7 @@
             "time": "03:45",
             "home_team": "본머스",
             "away_team": "입스위치",
-            "home_team_rank": 8,
+            "home_team_rank": 9,
             "away_team_rank": 18,
             "status": "Not Started"
         },
@@ -151,8 +142,8 @@
             "time": "03:45",
             "home_team": "브라이턴",
             "away_team": "애스턴 빌라",
-            "home_team_rank": 6,
-            "away_team_rank": 7,
+            "home_team_rank": 7,
+            "away_team_rank": 8,
             "status": "Not Started"
         },
         {
@@ -188,7 +179,7 @@
             "home_team": "웨스트 햄",
             "away_team": "본머스",
             "home_team_rank": 16,
-            "away_team_rank": 8,
+            "away_team_rank": 9,
             "status": "Not Started"
         },
         {
@@ -197,7 +188,7 @@
             "home_team": "크리스털 팰리스",
             "away_team": "브라이턴",
             "home_team_rank": 11,
-            "away_team_rank": 6,
+            "away_team_rank": 7,
             "status": "Not Started"
         },
         {
@@ -214,7 +205,7 @@
             "time": "01:30",
             "home_team": "애스턴 빌라",
             "away_team": "노팅엄 포레스트",
-            "home_team_rank": 7,
+            "home_team_rank": 8,
             "away_team_rank": 3,
             "status": "Not Started"
         },
@@ -260,7 +251,7 @@
             "home_team": "레스터 시티",
             "away_team": "뉴캐슬",
             "home_team_rank": 19,
-            "away_team_rank": 9,
+            "away_team_rank": 6,
             "status": "Not Started"
         }
     ]
