@@ -280,6 +280,51 @@
             "home_team_rank": 6,
             "away_team_rank": 12,
             "status": "Not Started"
+        },
+        {
+            "date": "2025-04-19",
+            "time": "23:00",
+            "home_team": "에버턴",
+            "away_team": "맨 시티",
+            "home_team_rank": 15,
+            "away_team_rank": 5,
+            "status": "Not Started"
+        },
+        {
+            "date": "2025-04-19",
+            "time": "23:00",
+            "home_team": "웨스트 햄",
+            "away_team": "사우샘프턴",
+            "home_team_rank": 16,
+            "away_team_rank": 20,
+            "status": "Not Started"
+        },
+        {
+            "date": "2025-04-19",
+            "time": "23:00",
+            "home_team": "크리스털 팰리스",
+            "away_team": "본머스",
+            "home_team_rank": 12,
+            "away_team_rank": 10,
+            "status": "Not Started"
+        },
+        {
+            "date": "2025-04-19",
+            "time": "23:00",
+            "home_team": "브렌트퍼드",
+            "away_team": "브라이턴",
+            "home_team_rank": 11,
+            "away_team_rank": 7,
+            "status": "Not Started"
+        },
+        {
+            "date": "2025-04-20",
+            "time": "01:30",
+            "home_team": "애스턴 빌라",
+            "away_team": "뉴캐슬",
+            "home_team_rank": 9,
+            "away_team_rank": 6,
+            "status": "Not Started"
         }
     ]
 }
