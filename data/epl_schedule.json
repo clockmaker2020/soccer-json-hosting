@@ -417,24 +417,6 @@
             "status": "Not Started"
         },
         {
-            "date": "2025-04-26",
-            "time": "23:00",
-            "home_team": "노팅엄 포레스트",
-            "away_team": "브렌트퍼드",
-            "home_team_rank": 3,
-            "away_team_rank": 11,
-            "status": "Not Started"
-        },
-        {
-            "date": "2025-04-27",
-            "time": "01:30",
-            "home_team": "아스널",
-            "away_team": "크리스털 팰리스",
-            "home_team_rank": 2,
-            "away_team_rank": 12,
-            "status": "Not Started"
-        },
-        {
             "date": "2025-04-27",
             "time": "22:00",
             "home_team": "본머스",
@@ -450,15 +432,6 @@
             "away_team": "토트넘",
             "home_team_rank": 1,
             "away_team_rank": 14,
-            "status": "Not Started"
-        },
-        {
-            "date": "2025-04-29",
-            "time": "04:00",
-            "home_team": "맨 시티",
-            "away_team": "애스턴 빌라",
-            "home_team_rank": 5,
-            "away_team_rank": 9,
             "status": "Not Started"
         }
     ]
