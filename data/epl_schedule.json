@@ -3,56 +3,11 @@
     "season": 2024,
     "matches": [
         {
-            "date": "2025-04-05",
-            "time": "20:30",
-            "home_team": "에버턴",
-            "away_team": "아스널",
-            "home_team_rank": 15,
-            "away_team_rank": 2,
-            "status": "Not Started"
-        },
-        {
-            "date": "2025-04-05",
-            "time": "23:00",
-            "home_team": "웨스트 햄",
-            "away_team": "본머스",
-            "home_team_rank": 16,
-            "away_team_rank": 10,
-            "status": "Not Started"
-        },
-        {
-            "date": "2025-04-05",
-            "time": "23:00",
-            "home_team": "크리스털 팰리스",
-            "away_team": "브라이턴",
-            "home_team_rank": 12,
-            "away_team_rank": 8,
-            "status": "Not Started"
-        },
-        {
-            "date": "2025-04-05",
-            "time": "23:00",
-            "home_team": "입스위치",
-            "away_team": "울브스",
-            "home_team_rank": 18,
-            "away_team_rank": 17,
-            "status": "Not Started"
-        },
-        {
-            "date": "2025-04-06",
-            "time": "01:30",
-            "home_team": "애스턴 빌라",
-            "away_team": "노팅엄 포레스트",
-            "home_team_rank": 7,
-            "away_team_rank": 3,
-            "status": "Not Started"
-        },
-        {
             "date": "2025-04-06",
             "time": "22:00",
             "home_team": "풀럼",
             "away_team": "리버풀",
-            "home_team_rank": 9,
+            "home_team_rank": 10,
             "away_team_rank": 1,
             "status": "Not Started"
         },
@@ -61,7 +16,7 @@
             "time": "22:00",
             "home_team": "토트넘",
             "away_team": "사우샘프턴",
-            "home_team_rank": 14,
+            "home_team_rank": 16,
             "away_team_rank": 20,
             "status": "Not Started"
         },
@@ -70,7 +25,7 @@
             "time": "22:00",
             "home_team": "브렌트퍼드",
             "away_team": "첼시",
-            "home_team_rank": 11,
+            "home_team_rank": 12,
             "away_team_rank": 4,
             "status": "Not Started"
         },
@@ -89,7 +44,7 @@
             "home_team": "레스터 시티",
             "away_team": "뉴캐슬",
             "home_team_rank": 19,
-            "away_team_rank": 6,
+            "away_team_rank": 7,
             "status": "Not Started"
         },
         {
@@ -98,7 +53,7 @@
             "home_team": "맨 시티",
             "away_team": "크리스털 팰리스",
             "home_team_rank": 5,
-            "away_team_rank": 12,
+            "away_team_rank": 11,
             "status": "Not Started"
         },
         {
@@ -107,7 +62,7 @@
             "home_team": "사우샘프턴",
             "away_team": "애스턴 빌라",
             "home_team_rank": 20,
-            "away_team_rank": 7,
+            "away_team_rank": 6,
             "status": "Not Started"
         },
         {
@@ -125,7 +80,7 @@
             "home_team": "노팅엄 포레스트",
             "away_team": "에버턴",
             "home_team_rank": 3,
-            "away_team_rank": 15,
+            "away_team_rank": 14,
             "status": "Not Started"
         },
         {
@@ -134,7 +89,7 @@
             "home_team": "아스널",
             "away_team": "브렌트퍼드",
             "home_team_rank": 2,
-            "away_team_rank": 11,
+            "away_team_rank": 12,
             "status": "Not Started"
         },
         {
@@ -143,7 +98,7 @@
             "home_team": "울브스",
             "away_team": "토트넘",
             "home_team_rank": 17,
-            "away_team_rank": 14,
+            "away_team_rank": 16,
             "status": "Not Started"
         },
         {
@@ -152,7 +107,7 @@
             "home_team": "리버풀",
             "away_team": "웨스트 햄",
             "home_team_rank": 1,
-            "away_team_rank": 16,
+            "away_team_rank": 15,
             "status": "Not Started"
         },
         {
@@ -169,7 +124,7 @@
             "time": "00:30",
             "home_team": "뉴캐슬",
             "away_team": "맨유",
-            "home_team_rank": 6,
+            "home_team_rank": 7,
             "away_team_rank": 13,
             "status": "Not Started"
         },
@@ -178,8 +133,8 @@
             "time": "04:00",
             "home_team": "본머스",
             "away_team": "풀럼",
-            "home_team_rank": 10,
-            "away_team_rank": 9,
+            "home_team_rank": 9,
+            "away_team_rank": 10,
             "status": "Not Started"
         },
         {
@@ -187,8 +142,8 @@
             "time": "03:30",
             "home_team": "뉴캐슬",
             "away_team": "크리스털 팰리스",
-            "home_team_rank": 6,
-            "away_team_rank": 12,
+            "home_team_rank": 7,
+            "away_team_rank": 11,
             "status": "Not Started"
         },
         {
@@ -196,7 +151,7 @@
             "time": "23:00",
             "home_team": "에버턴",
             "away_team": "맨 시티",
-            "home_team_rank": 15,
+            "home_team_rank": 14,
             "away_team_rank": 5,
             "status": "Not Started"
         },
@@ -205,7 +160,7 @@
             "time": "23:00",
             "home_team": "웨스트 햄",
             "away_team": "사우샘프턴",
-            "home_team_rank": 16,
+            "home_team_rank": 15,
             "away_team_rank": 20,
             "status": "Not Started"
         },
@@ -214,8 +169,8 @@
             "time": "23:00",
             "home_team": "크리스털 팰리스",
             "away_team": "본머스",
-            "home_team_rank": 12,
-            "away_team_rank": 10,
+            "home_team_rank": 11,
+            "away_team_rank": 9,
             "status": "Not Started"
         },
         {
@@ -223,7 +178,7 @@
             "time": "23:00",
             "home_team": "브렌트퍼드",
             "away_team": "브라이턴",
-            "home_team_rank": 11,
+            "home_team_rank": 12,
             "away_team_rank": 8,
             "status": "Not Started"
         },
@@ -232,8 +187,8 @@
             "time": "01:30",
             "home_team": "애스턴 빌라",
             "away_team": "뉴캐슬",
-            "home_team_rank": 7,
-            "away_team_rank": 6,
+            "home_team_rank": 6,
+            "away_team_rank": 7,
             "status": "Not Started"
         },
         {
@@ -250,7 +205,7 @@
             "time": "22:00",
             "home_team": "풀럼",
             "away_team": "첼시",
-            "home_team_rank": 9,
+            "home_team_rank": 10,
             "away_team_rank": 4,
             "status": "Not Started"
         },
@@ -277,7 +232,7 @@
             "time": "04:00",
             "home_team": "토트넘",
             "away_team": "노팅엄 포레스트",
-            "home_team_rank": 14,
+            "home_team_rank": 16,
             "away_team_rank": 3,
             "status": "Not Started"
         },
@@ -287,7 +242,7 @@
             "home_team": "맨 시티",
             "away_team": "애스턴 빌라",
             "home_team_rank": 5,
-            "away_team_rank": 7,
+            "away_team_rank": 6,
             "status": "Not Started"
         },
         {
@@ -296,7 +251,7 @@
             "home_team": "아스널",
             "away_team": "크리스털 팰리스",
             "home_team_rank": 2,
-            "away_team_rank": 12,
+            "away_team_rank": 11,
             "status": "Not Started"
         },
         {
@@ -305,7 +260,7 @@
             "home_team": "첼시",
             "away_team": "에버턴",
             "home_team_rank": 4,
-            "away_team_rank": 15,
+            "away_team_rank": 14,
             "status": "Not Started"
         },
         {
@@ -313,7 +268,7 @@
             "time": "23:00",
             "home_team": "뉴캐슬",
             "away_team": "입스위치",
-            "home_team_rank": 6,
+            "home_team_rank": 7,
             "away_team_rank": 18,
             "status": "Not Started"
         },
@@ -332,7 +287,7 @@
             "home_team": "사우샘프턴",
             "away_team": "풀럼",
             "home_team_rank": 20,
-            "away_team_rank": 9,
+            "away_team_rank": 10,
             "status": "Not Started"
         },
         {
@@ -341,7 +296,7 @@
             "home_team": "브라이턴",
             "away_team": "웨스트 햄",
             "home_team_rank": 8,
-            "away_team_rank": 16,
+            "away_team_rank": 15,
             "status": "Not Started"
         },
         {
@@ -349,7 +304,7 @@
             "time": "22:00",
             "home_team": "본머스",
             "away_team": "맨유",
-            "home_team_rank": 10,
+            "home_team_rank": 9,
             "away_team_rank": 13,
             "status": "Not Started"
         },
@@ -359,7 +314,7 @@
             "home_team": "리버풀",
             "away_team": "토트넘",
             "home_team_rank": 1,
-            "away_team_rank": 14,
+            "away_team_rank": 16,
             "status": "Not Started"
         },
         {
@@ -368,7 +323,7 @@
             "home_team": "노팅엄 포레스트",
             "away_team": "브렌트퍼드",
             "home_team_rank": 3,
-            "away_team_rank": 11,
+            "away_team_rank": 12,
             "status": "Not Started"
         },
         {
@@ -385,8 +340,8 @@
             "time": "20:30",
             "home_team": "애스턴 빌라",
             "away_team": "풀럼",
-            "home_team_rank": 7,
-            "away_team_rank": 9,
+            "home_team_rank": 6,
+            "away_team_rank": 10,
             "status": "Not Started"
         },
         {
@@ -394,7 +349,7 @@
             "time": "23:00",
             "home_team": "에버턴",
             "away_team": "입스위치",
-            "home_team_rank": 15,
+            "home_team_rank": 14,
             "away_team_rank": 18,
             "status": "Not Started"
         },
@@ -412,8 +367,8 @@
             "time": "23:00",
             "home_team": "웨스트 햄",
             "away_team": "토트넘",
-            "home_team_rank": 16,
-            "away_team_rank": 14,
+            "home_team_rank": 15,
+            "away_team_rank": 16,
             "status": "Not Started"
         },
         {
@@ -422,7 +377,7 @@
             "home_team": "아스널",
             "away_team": "본머스",
             "home_team_rank": 2,
-            "away_team_rank": 10,
+            "away_team_rank": 9,
             "status": "Not Started"
         },
         {
@@ -431,7 +386,7 @@
             "home_team": "브라이턴",
             "away_team": "뉴캐슬",
             "home_team_rank": 8,
-            "away_team_rank": 6,
+            "away_team_rank": 7,
             "status": "Not Started"
         },
         {
@@ -439,7 +394,7 @@
             "time": "22:00",
             "home_team": "브렌트퍼드",
             "away_team": "맨유",
-            "home_team_rank": 11,
+            "home_team_rank": 12,
             "away_team_rank": 13,
             "status": "Not Started"
         },
@@ -457,7 +412,7 @@
             "time": "04:00",
             "home_team": "크리스털 팰리스",
             "away_team": "노팅엄 포레스트",
-            "home_team_rank": 12,
+            "home_team_rank": 11,
             "away_team_rank": 3,
             "status": "Not Started"
         }
