@@ -3,15 +3,6 @@
     "season": 2024,
     "matches": [
         {
-            "date": "2025-04-17",
-            "time": "03:30",
-            "home_team": "뉴캐슬",
-            "away_team": "크리스털 팰리스",
-            "home_team_rank": 4,
-            "away_team_rank": 12,
-            "status": "Not Started"
-        },
-        {
             "date": "2025-04-19",
             "time": "23:00",
             "home_team": "에버턴",
@@ -53,7 +44,7 @@
             "home_team": "애스턴 빌라",
             "away_team": "뉴캐슬",
             "home_team_rank": 7,
-            "away_team_rank": 4,
+            "away_team_rank": 3,
             "status": "Not Started"
         },
         {
@@ -98,7 +89,7 @@
             "home_team": "토트넘",
             "away_team": "노팅엄 포레스트",
             "home_team_rank": 15,
-            "away_team_rank": 3,
+            "away_team_rank": 4,
             "status": "Not Started"
         },
         {
@@ -133,7 +124,7 @@
             "time": "23:00",
             "home_team": "뉴캐슬",
             "away_team": "입스위치",
-            "home_team_rank": 4,
+            "home_team_rank": 3,
             "away_team_rank": 18,
             "status": "Not Started"
         },
@@ -187,7 +178,7 @@
             "time": "03:30",
             "home_team": "노팅엄 포레스트",
             "away_team": "브렌트퍼드",
-            "home_team_rank": 3,
+            "home_team_rank": 4,
             "away_team_rank": 11,
             "status": "Not Started"
         },
@@ -251,7 +242,7 @@
             "home_team": "브라이턴",
             "away_team": "뉴캐슬",
             "home_team_rank": 10,
-            "away_team_rank": 4,
+            "away_team_rank": 3,
             "status": "Not Started"
         },
         {
@@ -278,7 +269,7 @@
             "home_team": "크리스털 팰리스",
             "away_team": "노팅엄 포레스트",
             "home_team_rank": 12,
-            "away_team_rank": 3,
+            "away_team_rank": 4,
             "status": "Not Started"
         },
         {
@@ -286,7 +277,7 @@
             "time": "20:30",
             "home_team": "뉴캐슬",
             "away_team": "첼시",
-            "home_team_rank": 4,
+            "home_team_rank": 3,
             "away_team_rank": 6,
             "status": "Not Started"
         },
@@ -358,7 +349,7 @@
             "time": "22:15",
             "home_team": "노팅엄 포레스트",
             "away_team": "레스터 시티",
-            "home_team_rank": 3,
+            "home_team_rank": 4,
             "away_team_rank": 19,
             "status": "Not Started"
         },
