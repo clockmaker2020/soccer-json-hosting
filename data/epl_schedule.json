@@ -219,21 +219,21 @@
             "status": "Not Started"
         },
         {
-            "date": "2025-05-03",
-            "time": "23:00",
-            "home_team": "웨스트 햄",
-            "away_team": "토트넘",
-            "home_team_rank": 17,
-            "away_team_rank": 15,
-            "status": "Not Started"
-        },
-        {
             "date": "2025-05-04",
             "time": "01:30",
             "home_team": "아스널",
             "away_team": "본머스",
             "home_team_rank": 2,
             "away_team_rank": 8,
+            "status": "Not Started"
+        },
+        {
+            "date": "2025-05-04",
+            "time": "22:00",
+            "home_team": "웨스트 햄",
+            "away_team": "토트넘",
+            "home_team_rank": 17,
+            "away_team_rank": 15,
             "status": "Not Started"
         },
         {
@@ -441,6 +441,15 @@
             "away_team": "본머스",
             "home_team_rank": 5,
             "away_team_rank": 8,
+            "status": "Not Started"
+        },
+        {
+            "date": "2025-05-20",
+            "time": "04:00",
+            "home_team": "브라이턴",
+            "away_team": "리버풀",
+            "home_team_rank": 10,
+            "away_team_rank": 1,
             "status": "Not Started"
         }
     ]
